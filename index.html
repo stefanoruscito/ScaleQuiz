@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sulle Scale Maggiori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz sui Gradi delle Scale Maggiori</h1>
+        <div id="quiz-section">
+            <label for="scale">Seleziona una scala:</label>
+            <select id="scale">
+                <option value="Do maggiore">Do maggiore</option>
+                <option value="Re maggiore">Re maggiore</option>
+                <option value="Mi maggiore">Mi maggiore</option>
+                <!-- Aggiungi altre scale qui -->
+            </select>
+            <button id="start-quiz">Inizia il quiz</button>
+        </div>
+
+        <div id="question-section" class="hidden">
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Inserisci la tua risposta">
+            <button id="submit-answer">Invia</button>
+        </div>
+
+        <div id="result-section" class="hidden">
+            <p id="result"></p>
+            <button id="next-question">Prossima domanda</button>
+        </div>
+
+        <div id="final-section" class="hidden">
+            <p id="final-score"></p>
+            <button id="restart-quiz">Ricomincia</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
